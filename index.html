@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Cloud Strategic Vision for Illinois DoIT</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'IBM Plex Sans', sans-serif;
+            background-color: #F0F0F0;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.1);
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body class="text-[#1D2731]">
+    <main class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-[#0B3C5D] mb-2">A Strategic Vision for the State of Illinois</h1>
+            <p class="text-xl md:text-2xl text-[#328CC1] font-light">Unified Hybrid Cloud Governance & AI-Powered Innovation</p>
+        </header>
+
+        <section id="challenges" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8 text-[#0B3C5D]">Understanding Your Core Objectives</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card p-6 text-center">
+                    <div class="text-5xl mb-4">🧩</div>
+                    <h3 class="text-xl font-semibold mb-2 text-[#0B3C5D]">Standardize & Govern</h3>
+                    <p class="text-gray-600">Establish a consistent, standardized approach to manage a complex hybrid and multi-cloud environment, reducing operational friction and ensuring policy enforcement.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-5xl mb-4">💰</div>
+                    <h3 class="text-xl font-semibold mb-2 text-[#0B3C5D]">Optimize & Control</h3>
+                    <p class="text-gray-600">Gain deep visibility into resource usage and cloud spend across all environments to optimize costs and re-invest savings into innovation.</p>
+                </div>
+                <div class="card p-6 text-center">
+                    <div class="text-5xl mb-4">📈</div>
+                    <h3 class="text-xl font-semibold mb-2 text-[#0B3C5D]">Mature & Innovate</h3>
+                    <p class="text-gray-600">Move beyond basic operations to mature cloud processes, enabling development teams to build and deploy secure, next-generation public services faster.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision" class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-2 text-[#0B3C5D]">Our Differentiated Vision: A Three-Pillar Strategy</h2>
+            <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto mb-12">We propose a partnership that embraces DoIT's current investments and elevates them with a unified management plane, a foundation of trust, and a clear path to AI-driven innovation.</p>
+
+            <div class="card p-6 md:p-8 mb-12">
+                <h3 class="text-2xl font-semibold mb-4 text-[#0B3C5D]">Pillar 1: A Unified Control Plane for a Hybrid Reality</h3>
+                <p class="text-gray-600 mb-8">Instead of managing silos, IBM Cloud Satellite extends a single, secure control plane to all your environments. Deploy and manage IBM Cloud services, including Red Hat OpenShift, consistently across your on-premises data centers, your existing Azure footprint, and the IBM Cloud.</p>
+                
+                <div class="w-full p-4">
+                    <div class="flex flex-col md:flex-row items-center justify-between">
+                        <div class="w-full md:w-1/4 text-center p-4 border-2 border-dashed border-gray-300 rounded-lg mb-4 md:mb-0">
+                            <span class="text-4xl">🏢</span>
+                            <h4 class="font-bold mt-2">On-Premises DC</h4>
+                            <p class="text-sm text-gray-500">Legacy & Private Apps</p>
+                        </div>
+                        
+                        <div class="hidden md:block h-16 md:h-auto md:w-16 border-t-2 md:border-t-0 md:border-l-2 border-gray-400"></div>
+
+                        <div class="w-full md:w-1/4 text-center p-4 border-2 border-dashed border-gray-300 rounded-lg mb-4 md:mb-0">
+                             <span class="text-4xl">☁️</span>
+                            <h4 class="font-bold mt-2">Existing Azure Cloud</h4>
+                            <p class="text-sm text-gray-500">Current Workloads</p>
+                        </div>
+                        
+                        <div class="hidden md:block h-16 md:h-auto md:w-16 border-t-2 md:border-t-0 md:border-l-2 border-gray-400"></div>
+
+                        <div class="w-full md:w-1/4 text-center p-4 border-2 border-dashed border-gray-300 rounded-lg">
+                            <span class="text-4xl">🌐</span>
+                            <h4 class="font-bold mt-2">IBM Cloud</h4>
+                            <p class="text-sm text-gray-500">New & Modernized Apps</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-center my-4">
+                        <div class="h-10 w-px bg-[#328CC1]"></div>
+                    </div>
+                    
+                    <div class="bg-[#0B3C5D] text-white p-6 rounded-lg shadow-xl text-center">
+                        <h4 class="text-xl font-bold">IBM Cloud Satellite + Red Hat OpenShift</h4>
+                        <p class="font-light">Your Single Control Plane for Apps, Data, and Services. Everywhere.</p>
+                    </div>
+                </div>
+
+                 <div class="mt-8">
+                    <h4 class="text-xl font-semibold text-center mb-4 text-[#0B3C5D]">From Siloed Complexity to Unified Efficiency</h4>
+                    <div class="chart-container h-80 md:h-96">
+                        <canvas id="unifiedMgmtChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="card p-6 md:p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#0B3C5D]">Pillar 2: A Foundation of Trust & Security</h3>
+                    <p class="text-gray-600 mb-6">Protect sensitive citizen data with the industry's only confidential cloud. IBM Cloud Hyper Protect services ensure that data remains encrypted and inaccessible—even to IBM—while in use, providing unparalleled data sovereignty and public trust.</p>
+                    <div class="chart-container">
+                        <canvas id="securityChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="card p-6 md:p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-[#0B3C5D]">Pillar 3: A Partnership for AI-Powered Innovation</h3>
+                    <p class="text-gray-600 mb-6">Move beyond infrastructure management to transformative public service. With the watsonx AI and data platform running on your unified hybrid cloud, you can build, scale, and govern AI to address the state's most pressing challenges.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-4xl">🧠</div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-[#0B3C5D]">watsonx.ai</h4>
+                                <p class="text-gray-600">Build, train, and deploy trusted AI models to optimize state services, from infrastructure planning to public health analytics.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-4xl">💾</div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-[#0B3C5D]">watsonx.data</h4>
+                                <p class="text-gray-600">Access and analyze data across all your existing data stores with a fit-for-purpose data lakehouse, without costly data movement.</p>
+                            </div>
+                        </div>
+                         <div class="flex items-start space-x-4">
+                            <div class="text-4xl">✅</div>
+                            <div>
+                                <h4 class="font-semibold text-lg text-[#0B3C5D]">watsonx.governance</h4>
+                                <p class="text-gray-600">Ensure AI models are transparent, fair, and compliant with regulations, building confidence and accountability into every application.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="solution-stack" class="mb-12">
+             <h2 class="text-3xl font-bold text-center mb-8 text-[#0B3C5D]">The Proposed IBM Solution Stack</h2>
+             <div class="card p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+                    <div>
+                        <h4 class="font-semibold text-lg text-[#328CC1]">Advisory & MSP Services</h4>
+                        <p class="text-gray-800">IBM Consulting</p>
+                    </div>
+                     <div>
+                        <h4 class="font-semibold text-lg text-[#328CC1]">Hybrid Cloud Management Plane</h4>
+                        <p class="text-gray-800">IBM Cloud Satellite</p>
+                    </div>
+                     <div>
+                        <h4 class="font-semibold text-lg text-[#328CC1]">Standardized Application Platform</h4>
+                        <p class="text-gray-800">Red Hat OpenShift on IBM Cloud (ROKS)</p>
+                    </div>
+                     <div>
+                        <h4 class="font-semibold text-lg text-[#328CC1]">Enterprise Automation</h4>
+                        <p class="text-gray-800">Red Hat Ansible Automation Platform</p>
+                    </div>
+                     <div>
+                        <h4 class="font-semibold text-lg text-[#328CC1]">Security, Governance & Compliance</h4>
+                        <p class="text-gray-800">IBM Cloud Security and Compliance Center</p>
+                    </div>
+                     <div>
+                        <h4 class="font-semibold text-lg text-[#328CC1]">Confidential Computing & Data Sovereignty</h4>
+                        <p class="text-gray-800">IBM Cloud Hyper Protect Services</p>
+                    </div>
+                     <div>
+                        <h4 class="font-semibold text-lg text-[#328CC1]">AI & Data Platform</h4>
+                        <p class="text-gray-800">IBM watsonx (via Satellite)</p>
+                    </div>
+                     <div>
+                        <h4 class="font-semibold text-lg text-[#328CC1]">Core IaaS</h4>
+                        <p class="text-gray-800">IBM Cloud VPC and Bare Metal</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <footer class="text-center mt-16 pt-8 border-t border-gray-300">
+             <h2 class="text-3xl font-bold text-[#0B3C5D] mb-2">Why IBM is the Right Partner</h2>
+             <p class="text-lg text-gray-700 max-w-3xl mx-auto">The State of Illinois needs more than a cloud reseller; you need a strategic partner for transformation. We offer one platform to manage your complexity and one partnership to drive your innovation.</p>
+        </footer>
+
+    </main>
+
+<script>
+    function wrapLabels(label, maxLength) {
+        if (typeof label !== 'string' || label.length <= maxLength) {
+            return label;
+        }
+        const words = label.split(' ');
+        const lines = [];
+        let currentLine = '';
+        words.forEach(word => {
+            if ((currentLine + word).length > maxLength && currentLine.length > 0) {
+                lines.push(currentLine.trim());
+                currentLine = '';
+            }
+            currentLine += word + ' ';
+        });
+        lines.push(currentLine.trim());
+        return lines;
+    }
+
+    const tooltipTitleCallback = function(tooltipItems) {
+        const item = tooltipItems[0];
+        let label = item.chart.data.labels[item.dataIndex];
+        if (Array.isArray(label)) {
+            return label.join(' ');
+        } else {
+            return label;
+        }
+    };
+
+    const sharedChartOptions = {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+            legend: {
+                position: 'top',
+                labels: {
+                    color: '#1D2731',
+                    font: {
+                        size: 14
+                    }
+                }
+            },
+            tooltip: {
+                callbacks: {
+                    title: tooltipTitleCallback
+                }
+            }
+        },
+    };
+
+    const unifiedMgmtChartCtx = document.getElementById('unifiedMgmtChart').getContext('2d');
+    const unifiedMgmtData = {
+        labels: ['Operational Overhead', 'Potential Security Gaps', 'Time to Deploy New Services', 'Cost Visibility'],
+        datasets: [
+            {
+                label: 'Siloed Management',
+                data: [85, 70, 90, 40],
+                backgroundColor: 'rgba(217, 179, 16, 0.6)',
+                borderColor: 'rgba(217, 179, 16, 1)',
+                borderWidth: 1
+            },
+            {
+                label: 'Unified Management (IBM)',
+                data: [30, 20, 35, 95],
+                backgroundColor: 'rgba(50, 140, 193, 0.6)',
+                borderColor: 'rgba(50, 140, 193, 1)',
+                borderWidth: 1
+            }
+        ]
+    };
+    unifiedMgmtData.labels = unifiedMgmtData.labels.map(label => wrapLabels(label, 16));
+    new Chart(unifiedMgmtChartCtx, {
+        type: 'bar',
+        data: unifiedMgmtData,
+        options: {
+            ...sharedChartOptions,
+            indexAxis: 'y',
+            scales: {
+                x: {
+                    beginAtZero: true,
+                    max: 100,
+                    ticks: { color: '#1D2731' },
+                    grid: { color: '#E0E0E0' }
+                },
+                y: {
+                    ticks: { color: '#1D2731' },
+                    grid: { display: false }
+                }
+            }
+        }
+    });
+
+    const securityChartCtx = document.getElementById('securityChart').getContext('2d');
+    const securityData = {
+        labels: ['Data-in-Use Protection', 'Provider Access Control', 'Compliance Automation', 'Risk Visibility', 'Data Sovereignty'],
+        datasets: [{
+            label: 'Standard Cloud Security',
+            data: [20, 40, 70, 65, 30],
+            fill: true,
+            backgroundColor: 'rgba(217, 179, 16, 0.2)',
+            borderColor: 'rgb(217, 179, 16)',
+            pointBackgroundColor: 'rgb(217, 179, 16)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgb(217, 179, 16)'
+        }, {
+            label: 'IBM Confidential Computing',
+            data: [95, 90, 85, 80, 95],
+            fill: true,
+            backgroundColor: 'rgba(11, 60, 93, 0.4)',
+            borderColor: 'rgb(11, 60, 93)',
+            pointBackgroundColor: 'rgb(11, 60, 93)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgb(11, 60, 93)'
+        }]
+    };
+    securityData.labels = securityData.labels.map(label => wrapLabels(label, 16));
+    new Chart(securityChartCtx, {
+        type: 'radar',
+        data: securityData,
+        options: {
+            ...sharedChartOptions,
+            scales: {
+                r: {
+                    angleLines: { color: '#CCCCCC' },
+                    grid: { color: '#DDDDDD' },
+                    pointLabels: {
+                        font: { size: 12 },
+                        color: '#1D2731'
+                    },
+                    ticks: {
+                        backdropColor: 'rgba(255, 255, 255, 0.75)',
+                        color: '#333'
+                    }
+                }
+            }
+        }
+    });
+</script>
+</body>
+</html>
